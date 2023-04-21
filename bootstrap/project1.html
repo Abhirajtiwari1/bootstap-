@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <title>project1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>  
+  <style>
+   #button{
+    margin-right: 5px;
+    font-size: 30px;
+    height: 65px;
+    width: 150px;
+    font-family: 'Dongle', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+   
+    .navbar-brand{
+        font-size: 100px;
+;
+        font-family: 'Caveat Brush', Courier, monospace;
+    }
+    .container-fluid{
+        font-size: 40px;
+        font-family: 'Dongle', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h5{
+        font-size: 100px;
+    }
+    /* .col{
+        border: 2px solid black;
+    } */
+   h1{
+    text-align: center;
+    font-size: 300px;
+    font-family: 'Dongle', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .card-text{
+    font-size: 50px;
+    font-family: 'Dongle', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   }  
+
+   .footer {
+  width: 100%;
+  background-color: black;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.footer .col h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 17px;
+  padding: 30px 0;
+  color: #FF0063;
+  text-transform: uppercase;
+}
+.footer .col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .col ul li {
+  color: white;
+  font-size: 20px;
+  padding: 5px 0px;
+}
+.address ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  cursor: pointer;
+  color: lightgray;
+  font-weight: bold;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .address {
+    width: 1000px;
+    display: block;
+  }
+  .address h2 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h2 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h2 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+ 
+
+ 
+  </style>
+  <body> 
+    
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">iCODE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html" target="_main">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mentors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Development Courses</a></li>
+                  <li><a class="dropdown-item" href="#">C/C++</a></li>
+                  <li><a class="dropdown-item" href="#">Other Programming Languages</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div> 
+       <!-- login/signup --> 
+
+       <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+             
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">New Customer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Get an iCODE account</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="button">Login/Signup</button>
+
+
+
+
+      </nav>
+      <div class="container1">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="code3.jpg" class="d-block w-100" height="1000px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Many Mentors One Platform</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="code2.jpg" class="d-block w-100" height="1000px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Choose your mentor</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="code1.jpg" class="d-block w-100" height="1000px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Project Development</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>   
+      <h1>Features</h1>
+       <div class="container2 my-4">
+     
+            <div class="row row-cols-2">
+              <div class="col"><div class="card" style="width: 100%; margin: 2px; padding: 2px; ">
+                <img src="code1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">List of Projects To develop</p>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 100%; margin: 2px; padding: 2px;" >
+                <img src="code1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Build A Community</p>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 100%; margin: 2px; padding: 2px;">
+                <img src="code3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">List of Mentors To Select</p>
+                </div>
+              </div></div>
+              <div class="col"><div class="card" style="width: 100%; margin: 2px; padding: 2px;">
+                <img src="code3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Quality Courses</p>
+                </div>
+              </div></div>
+            </div>
+          </div> 
+          <footer>
+            <footer>
+              <div class="footer" id="footer">
+                <div class="contain">
+                <div class="col">
+                  <h2>Company</h2>
+                  <ul>
+                    <li>About us</li>
+                    <li> Our Mission</li>
+                    <li>Services</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h2>Products</h2>
+                  <ul>
+                    <li>SEO</li>
+                    <li>Content Development</li>
+                    <li>Digital Marketing</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h2>Team</h2>
+                  <ul>
+                    <li>HR Team</li>
+                    <li>Finance Team</li>
+                    <li>Content Team</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h2>Resources</h2>
+                  <ul>
+                    <li>Webmail</li>
+                    <li>Web templates</li>
+                    <li>Email templates</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h2>Contact</h2>
+                  <ul>
+                    <li>+91 9051 XXXXXX</li>
+                    <li>033 2464 XXXX</li>
+                    <li>abc@gmail.com</li>
+                  </ul>
+                </div>
+                <div class="col address">
+                  <h2>Address </h2>
+                  <ul>
+                    <li>Sky Towers, Service Road, Kolkata</li>
+                </ul>
+                </div>
+              <div class="clearfix"></div>
+              </div>
+              </div>
+              </footer>
+              
+          </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
