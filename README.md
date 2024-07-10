@@ -1,2 +1,2 @@
-# landing page demonstrating my bootrsap knowledge
+# landing page demonstrating my bootstrap knowledge
 ![Cover Image](./cover-image.jpg)
